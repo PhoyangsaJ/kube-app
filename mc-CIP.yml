@@ -8,4 +8,5 @@ spec:
   ports:
   - port: 11211
     targetPort: 11211
+    protocol: TCP
   type: ClusterIP
