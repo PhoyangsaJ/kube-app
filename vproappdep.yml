@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: vproapp
 spec:
-  repllicas: 1
+  replicas: 1
   selector:
     matchLabels:
       app: vproapp
@@ -15,10 +15,6 @@ spec:
       containers:
       - name: vproapp
         image: phoyangsa/vprofileapp
-        resources:
-          limits:
-            memory: "128Mi"
-            cpu: "500m"
         ports:
         - name: vproapp-port
           containerPort: 8080
